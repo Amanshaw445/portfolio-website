@@ -1,0 +1,333 @@
+body, h1, h2, h3, p, div {
+    margin: 0;
+    padding: 0;
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(185,185,185);
+    color: black;
+    padding: 10px 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.nav-left {
+    font-size: 24px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+     gap: 15px;/*....................... */
+}
+
+.nav-content a {
+    cursor: pointer;
+    color: yellow;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);;
+    padding: 4px;
+    text-decoration: none;
+}
+.nav-content a:hover{
+    text-decoration: underline yellow;
+    color: black;
+    text-shadow: none;
+    border-radius: 5px;
+}
+.container {
+    background-image: url("Untitled\ design-fotor-2023081316255\ \(1\).png");
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 90vh;
+    width: 99.8%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    
+}
+.slide1{
+    padding-top: 1rem;
+}
+.slide2{
+    padding-top: 1rem;
+}
+.slide3{
+    padding-top: 1rem;
+}
+.slide4{
+    padding-top: 1rem;
+}
+.slide5{
+    padding-top: 1rem;
+}
+.slide6{
+    padding-top: 1rem;
+}
+#touch{
+    transition: 350ms;
+}
+#touch:hover{
+  transform: scale(1.05);
+
+}
+.container p {
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 1.6;
+    padding-top: 8rem;
+    padding-left: 1rem;
+    color: yellow;
+    user-select: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+.links{
+    padding-top:1rem;
+    padding-left: 1rem;
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+    align-items: center;
+}
+.slide1:hover{
+    padding-top: 0rem;
+}
+.slide2:hover{
+    padding-top: 0rem;
+}
+.slide3:hover{
+    padding-top: 0rem;
+}
+.slide4:hover{
+    padding-top: 0rem;
+}
+.slide5:hover{
+    padding-top: 0rem;
+}
+.slide6:hover{
+    padding-top: 0rem;
+}
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-right {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        border: 1px solid black;
+        background-color: #a29393;
+        width: 200px;
+        border-radius: 5px;
+        padding: 10px;
+        font-weight: bold;
+        transition: top 0.5s ease, opacity 0.5s ease;
+        z-index: 1000;
+    }
+    
+    .nav-right.active {
+        display: flex;
+    }
+    .container p{
+        color: black;
+    }
+}
+@media (max-width: 600px){
+    
+    
+    .container{
+        background-position: right -200px top;
+        background-size: auto 100%;
+        height: 70vh;
+    }
+    .container p{
+        font-size: 40px;
+        line-height: 1.6;
+        padding-top: 30vh;
+        color: black;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .links{
+        padding-top: 1vw;
+    }
+    
+    .card {
+        width: 95vw; 
+        margin: 10px auto; 
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+        
+   
+     .form-container{
+        height: 50vh;
+        width: 100%;
+        background-color: rgb(181,181,181);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;}
+}
+
+            @media screen and (min-width: 600px){
+                .card { 
+                 width: 22vw;
+                   }
+                 
+            }
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgb(181,181,181);
+    flex-wrap: wrap; 
+    box-sizing: border-box; 
+}
+
+.card {
+    border: 1px solid black;
+    height: 50vh;
+    background-color:rgb(254, 254, 254);
+    margin: 1vh 1vw;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 10px; 
+    border-radius: 7px;
+    transition: 500ms;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card img {
+    max-width: 99%; 
+    max-height: 70%; 
+}
+
+.card p {
+    text-align: center; 
+    margin-top: 10px; 
+    font-size:3vh;
+    
+}
+.my-info{
+    background-color: white;
+    font-size: 20px;
+    color: grey;
+    margin: 10px;
+    width: 95vw;
+    height:10vh;
+}
+
+.form-container{
+    height: 40vh;
+    width: 96%;
+    border: 5px solid yellow ;
+    background-color: rgb(181,181,181);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-family: 'Roboto Slab', serif;
+}
+.form-container div a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.back{
+    background-color: rgb(181,181,181);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44vh;
+    width: 100%;
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+   
+}
+#input{
+    margin: 7px;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(255, 255, 122, 0.84);
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 90%;
+}
+
+.form-btn{
+    height: 20px;
+    width: 80px;
+    margin-left: 200px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: 50ms;
+    font-weight: 600;
+}
+.form-btn:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width: 700px) {
+        .info-container {
+          border: 2px solid yellow;
+          border-radius: 10px;
+        }
+        .my-info-2 {color: white;
+        }
+}
+
+.f2{
+    width: 100%;
+
+}
+.footer-header {
+    background-color: #444444c2;
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;
+}
+.footer-container {
+    background-image:url(footer.png);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+}
+.footer {
+    background-color: #444444c2;
+    color: yellow;
+    text-align: center;
+    padding: 0.5em 0;
+}
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.footer-social a {
+   font-size: 10px;
+}

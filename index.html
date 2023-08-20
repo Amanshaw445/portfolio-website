@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Kanit:wght@600&family=Noto+Sans+Adlam+Unjoined:wght@700&family=REM:wght@300&family=Raleway&family=Roboto+Slab:wght@300&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head><style>
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(185,185,185);
+    color: black;
+    padding: 10px 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.nav-left {
+    font-size: 24px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-content a {
+    cursor: pointer;
+    color: yellow;
+    /* font-weight: 500; */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);;
+    padding: 4px;
+    text-decoration: none;
+}
+.nav-content a:hover{
+    text-decoration: underline yellow;
+    color: black;
+    text-shadow: none;
+    /* font-weight: 800; */
+    border-radius: 5px;
+}
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-right {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        border: 1px solid black;
+        background-color: #a29393;
+        width: 200px;
+        border-radius: 5px;
+        padding: 10px;
+        font-weight: bold;
+        transition: top 0.5s ease, opacity 0.5s ease;
+    }
+    
+    .nav-right.active {
+        display: flex;
+    }
+}
+</style>
+<body>
+    <navbar class="navbar">
+        <div class="nav-left">Aman Shaw</div>
+        <div class="nav-toggle" id="navToggle">
+            <div><i class="fa-solid fa-bars fa-2xl"></i></div>
+
+        </div>
+        <div class="nav-right">
+            <div style="font-weight: 700;" class="nav-content" id="touch"><a href="#">home</a></div>
+            <div style="font-weight: 700;" class="nav-content" id="touch"><a href="works.html">works</a></div>
+            <div style="font-weight: 700;" class="nav-content" id="touch"><a href="about.html">about me</a></div>
+            <div style="font-weight: 700;" class="nav-content" id="touch"><a href="cont.html">contact me</a></div>
+        </div>  
+    </navbar>
+    
+    <div class="container">
+        <p>Hii<br>I am Aman <br>Glad to see you here!</p>
+        <P2 class="links">
+            <a class="slide1" id="touch" href="#" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #1d4995;"></i></a>
+            <a class="slide2" id="touch" href="https://www.instagram.com/aman_shaw455/" target="_blank"><i class="fa-brands fa-instagram fa-2xl" style="color: #d214af;"></i></a>
+            <a class="slide3" id="touch" href="www.gmail.com"><i class="fa-solid fa-envelope fa-2xl" style="color: #394354;"></i></a>
+            <a class="slide4" id="touch" href=""><i class="fa-brands fa-facebook fa-2xl" style="color: #005eff;"></i></a>
+            <a class="slide5" id="touch" href=""><i class="fa-brands fa-twitter fa-2xl" style="color: #00ccff;"></i></a>
+            <a class="slide6" id="touch" href=""><i class="fa-brands fa-github fa-2xl" style="color: #ebe5e5;"></i></a>
+        </P2>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="webdev-img.jpeg" alt="Image 1">
+            <div class="card-p">I enjoy building appealing websites. My skills include HTML, CSS and i am learning JavaScript and more so that i can animate my works.</div>
+        </div>
+        
+        <div class="card">
+            <img src="c++.png" alt="Image 2">
+            <div class="card-p">i have started c++ to improve my coding skills and take it to next level. </div>
+        </div>
+        
+        <div class="card">
+            <img src="c-img.png" alt="Image 3">
+            <div class="card-p">As in college our syllabus include c programing.Thus as i am covering my syllabus my basics are getting stronger in c.</div>
+        </div>
+        
+        <div class="card">
+            <img src="python-img.jpeg" alt="Image 4">
+            <div class="card-p">I have done python programing in 12th boards and this symester also includes python.</div>
+        </div>
+<div class="f2">
+    <div class="footer-header">
+        <h1></h1>
+        <p></p>
+    </div>
+    <div class="footer-container">
+        <p>Contact me:</p>
+        <p>amanshaw817@gmail.com</p>
+        <div class="footer-social">
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-github fa-2xl" style="color: #ebe5e5;"></i></a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Aman Shaw</p>
+    </div>
+</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
